@@ -1,0 +1,56 @@
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.main > div {
+    flex: 1 1 33%;
+    text-align: center;
+    margin:5px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 10px;
+}
+.main > div > * {
+    display: block;
+    text-align: center;
+    margin: 15px auto;
+    
+}
+.main > div:hover{
+    box-shadow: 0px 7px 15px rgba(0,0,0,0.3);
+}
+.main > div > button {
+    width:200px;
+    height: 30px;
+    border:none;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    color:#000;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.main > div >button:hover{
+    color:#fff;
+    background: lightcoral;
+}
+.main > a{
+    flex:1 1 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:#000;
+    padding: 10px;
+    margin:5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: none;
+
+}
+.main > a:hover{
+    color:lightcoral
+}

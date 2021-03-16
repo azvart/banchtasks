@@ -7,13 +7,12 @@
     margin: auto;
     background: #fff;
 }
-.layout > * {
+.layout > header {
     flex: 1 1 100%;
+    text-align: right;
 } 
 
-.layout > *:nth-child(1){
-    text-align: right;
-}
+
 .layout >  header > a{
     width: 200px;
     height: 30px;

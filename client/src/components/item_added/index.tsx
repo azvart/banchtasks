@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import axios from 'axios';
-
+import * as form from './form.module.css';
 
 
 const ItemAdded:React.FC = ()=>{
@@ -17,10 +17,16 @@ const ItemAdded:React.FC = ()=>{
         setItem({...item,[e.target.name]: e.target.value});
     }
     return(
-        <form onSubmit={Item_Added_Submit}>
+        <form className={form.form}  onSubmit={Item_Added_Submit}>
+            <div>
             <input type="text" name='header' placeholder='header' onChange={(e)=>Item_Change(e)}/>
+            </div>
+            <div>
             <input type="text" name='description' placeholder='description' onChange={(e)=>Item_Change(e)}/>
+            </div>
+            <div>
             <input type="text" name='price' placeholder='price' onChange={(e)=>Item_Change(e)}/>
+            </div>
             <div>
                 <button type='submit'>
                     Add Item

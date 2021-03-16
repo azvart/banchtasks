@@ -1,10 +1,10 @@
 import React from 'react';
-
+import * as main from './main.module.css'
 
 
 const Main:React.FC = ({...props})=>{
     return(
-        <main  {...props}/>
+        <main className={main.main} {...props}/>
     )
 }
 
