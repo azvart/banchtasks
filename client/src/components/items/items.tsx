@@ -8,7 +8,7 @@ const Items:React.FC = () =>{
     const {item}:any = useContext(ItemContext);
     const {dispatch}:any = useContext(Context);
     const AddCart = useCallback((id)=>{
-        axios.get(`http://localhost:5000/${id}`)
+        axios.get(`http://localhost:5001/${id}`)
         .then((response:any)=>{
             dispatch({
                 type:"ADD_ITEM_CART",

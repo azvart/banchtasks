@@ -9,9 +9,9 @@ class PayService{
     
     gateway = new braintree.BraintreeGateway({
         environment:braintree.Environment.Sandbox,
-        merchantId:'5sdrszncbmcwrg9r',
-        publicKey:'98m6wb792jzk9vdw',
-        privateKey:'bb1a1629fa8719a811f2916e7c61fa50',
+        merchantId:'77hbdvvfq82j3y95',
+        publicKey:'drs3hgpxbm5qr8n7',
+        privateKey:'200fe080da32c72c8ff689b7e1a62bae',
     });
 
    GetToken = async ()=>{

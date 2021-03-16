@@ -6,7 +6,7 @@ import ItemsRouter from './routes/items.routes';
 import PayRoutes from './routes/pay.routes';
 import StripeRoutes from './routes/stripe.routes';
 const app = express();
-const port = 5000;
+const port = 5001;
 
 
 app.use(cors());
