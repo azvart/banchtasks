@@ -1,4 +1,5 @@
 import React,{useContext,useCallback} from 'react';
+import {Link} from 'react-router-dom';
 import {ItemContext,Context} from '../../redux/reducer/context';
 import * as card from './items.module.css';
 import axios from 'axios';
@@ -16,6 +17,7 @@ const Items:React.FC = () =>{
             })
         });
     },[]);
+    
     return(
             <>
             {  item.map((e:any)=>{
@@ -26,6 +28,7 @@ const Items:React.FC = () =>{
                     <button onClick={()=>AddCart(e._id)} >Add to Cart</button>
                 </div>
             })}
+            <Link to='/add_item'>Add Item</Link>
         </>
         
     )

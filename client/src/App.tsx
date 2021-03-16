@@ -14,6 +14,7 @@ import Header from './pages/header/header';
 import Items from './components/items/items';
 import Cart from './components/cart/cart';
 import StripeBtn from './components/anotherStripeBtn/StripeBtn';
+import ItemAdded from './components/item_added/index';
 const App:React.FC = ()=>{
   const [state,dispatch] = useReducer(Reducer,State);
   const {Provider} = Context;
@@ -88,7 +89,7 @@ const buy = async ()=>{
                             <StripeBtn />
                       </Route>
                       </SumContext.Provider>
-                    
+                    <Route path='/add_item'  component={ItemAdded} />
                 </Main>
               </Layout>
           </Route>

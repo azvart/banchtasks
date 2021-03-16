@@ -17,7 +17,7 @@ class ItemService{
     AddItem = async (data:Data)=>{
         try{
 
-            const newItem = new Items(data);
+            const newItem = new Items({header:data.header,description:data.description,price:Number(data.price)});
 
             return await newItem.save();
 
@@ -50,14 +50,7 @@ class ItemService{
         }
     }
 
-    Payment = async ()=>{
-        try{
-            
-           
-        }catch(e){
-            console.error(e);
-        }
-    }
+
     
 
 
