@@ -5,6 +5,7 @@ export interface Items extends Document{
     description:string,
     price:number,
     count:number,
+    
 }
 
 interface ItemsModel extends Model<Items>{
@@ -25,7 +26,10 @@ const ItemsSchema:Schema = new Schema({
         type:Number,
         required:true,
     },
- 
+    count:{
+        type:Number,
+        default:1
+    }
 
 },{versionKey:false});
 
