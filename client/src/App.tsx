@@ -16,6 +16,7 @@ import Items from './components/items/items';
 import Cart from './components/cart/cart';
 import StripeBtn from './components/anotherStripeBtn/StripeBtn';
 import ItemAdded from './components/item_added/index';
+import SDKBrain from './components/braintree_sdk/index';
 const App:React.FC = ()=>{
   const [state,dispatch] = useReducer(Reducer,State);
   const {Provider} = Context;
@@ -83,6 +84,7 @@ const buy = async ()=>{
                           }}
                           onInstance={(instance)=>setInstance(instance)}
                           />
+                          
                           <button onClick={buy}>Pay</button>
                       </Route>
                   
@@ -90,8 +92,10 @@ const buy = async ()=>{
                             <StripeBtn />
                       </Route>
                       <Route path ='/another_stripe' component={StripeForm} />
+                      <Route path='/braintree_sdk' component={SDKBrain} />
                       </SumContext.Provider>
                     <Route path='/add_item'  component={ItemAdded} />
+                    
                 </Main>
               </Layout>
           </Route>

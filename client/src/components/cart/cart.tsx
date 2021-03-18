@@ -27,6 +27,7 @@ const Cart:React.FC = () =>{
             <Link to='/braintree'>Оплатить с помощью BrainTree</Link>
             <Link to='/stripes'>Оплатить с помощью Stripes</Link>
             <Link to='/another_stripe'>Еще форма оплаты Stripe</Link>
+            <Link to='/braintree_sdk'>Форма оплаты BrainTree(не DropIn)</Link>
         </div>
     )
 }

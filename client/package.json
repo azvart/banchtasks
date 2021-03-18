@@ -43,10 +43,14 @@
     ]
   },
   "devDependencies": {
+    "@types/braintree": "^2.22.10",
     "@types/braintree-web": "^3.69.3",
+    "@types/braintree-web-drop-in": "^1.22.3",
     "@types/react-router-dom": "^5.1.7",
     "axios": "^0.21.1",
+    "braintree": "^3.2.2",
     "braintree-web": "^3.74.0",
+    "braintree-web-drop-in": "^1.27.0",
     "braintree-web-drop-in-react": "^1.2.1",
     "braintree-web-react": "^0.7.0",
     "react-router-dom": "^5.2.0",

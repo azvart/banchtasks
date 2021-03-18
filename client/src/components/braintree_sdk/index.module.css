@@ -1,0 +1,83 @@
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.form > div > div > div >div >input{
+    font-size: 16px;
+    font-weight: lighter;
+    color:black;
+    box-shadow:  0 0 2px rgba(0,0,0,.12), 0 2px 2px rgba(0,0,0,.12);
+    border:none;
+    transform: translateY(0.4em);
+    font-size: 1.125em;
+    line-height: 32px;
+    transition: all .15s ease-out;
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    overflow: hidden;
+    margin-bottom: 0.5em;
+    padding:5px;
+}
+.form > div > div > div >div >input:focus{
+    outline: none;
+}
+.form > div > div > div >div >input:hover{
+    box-shadow:  0 0 6px rgba(0,0,0,.12), 0 6px 6px rgba(0,0,0,.12);
+}
+.form > div{
+    background: #fff;
+    width:80%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .16), 0 0 2px 0 rgba(0, 0, 0, .12);
+}
+.form > div > header{
+    background: #3F51B5;
+    color:#fff;
+}
+.form > div > header,footer{
+    padding: 1em 2em;
+}
+.form > div > footer{
+    background: #f3f3f3;
+}
+.form > div > div {
+    padding: 1em 2em;
+    overflow: hidden;
+}
+.form > div > div > div{
+    width: 50%;
+    float:left;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.form > div > div >div >div{
+    height: 32px;
+    margin-bottom: 1em;
+    display: block;
+    background-color: transparent;
+    color: rgba(0, 0, 0, .87);
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .26);
+    outline: 0;
+    width: 100%;
+    font-size: 16px;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    position: relative;
+}
+.form > div > footer > button{
+    background: #E91E63;
+    color: #fff;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 3px;
+    padding: 1em 3em;
+    font-size: 1em;
+    text-transform: uppercase;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .2);
+    cursor:pointer;
+}
