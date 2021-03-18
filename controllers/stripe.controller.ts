@@ -11,15 +11,24 @@ class StripeController{
         try{
             
             const payment = await stripe_service.Payment(req.body);
-            return res.send(200).json({message:'Success',data:payment})
+            return res.status(200).json({message:'Success',data:payment})
 
 
         }catch(e){
             console.error(e);
+            return res.status(500).json({message:'Falure'})
         }
     }
 
-
+    GetToken = async (req:Request,res:Response)=>{
+        try{
+            const getToken = await stripe_service.GetToken(req.body);
+            return res.status(200).json({message:'Success',token:getToken});
+        }catch(e){
+            console.error(e);
+            return res.status(500).json({message:"Failure"});
+        }
+    }
 }
 
 

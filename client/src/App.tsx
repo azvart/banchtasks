@@ -11,6 +11,7 @@ import Layout from './pages/layout/layout';
 import Main from './pages/main/main';
 import Header from './pages/header/header';
 //components
+import StripeForm from './components/anotherStripePayment/index';
 import Items from './components/items/items';
 import Cart from './components/cart/cart';
 import StripeBtn from './components/anotherStripeBtn/StripeBtn';
@@ -46,7 +47,7 @@ const App:React.FC = ()=>{
 const buy = async ()=>{
   try{
   const {nonce} = await instance.requestPaymentMethod();
-  const response:any = await axios.post('http://localhost:5001/pay/sandbox',{payment:nonce,amount:TotalSum});
+  const response:any = await axios.post('http://localhost:5002/pay/sandbox',{payment:nonce,amount:TotalSum});
   console.log(response);
 }catch(e){
   console.error(e);
@@ -88,6 +89,7 @@ const buy = async ()=>{
                       <Route path='/stripes'>
                             <StripeBtn />
                       </Route>
+                      <Route path ='/another_stripe' component={StripeForm} />
                       </SumContext.Provider>
                     <Route path='/add_item'  component={ItemAdded} />
                 </Main>

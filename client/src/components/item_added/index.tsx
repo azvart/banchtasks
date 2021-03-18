@@ -9,7 +9,7 @@ const ItemAdded:React.FC = ()=>{
         event.preventDefault();
         axios({
             method:'post',
-            url:'http://localhost:5001/add',
+            url:'http://localhost:5002/add',
             data:item
         });
     }

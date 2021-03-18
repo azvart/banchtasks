@@ -42,15 +42,7 @@ class ItemController{
        }
    }
 
-   Payment = async (req:Request,res:Response)=>{
-       try{
-        const payment = await service.Payment();
-        return res.status(200).json({message:'Success',data:payment});
-       }catch(e){
-           console.log(e);
-           return res.status(500).json({message:"Payment failed"});
-       }
-   }
+
 
 }
 

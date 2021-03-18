@@ -26,6 +26,7 @@ const Cart:React.FC = () =>{
             <span> Total Sum : {TotalSum}</span>
             <Link to='/braintree'>Оплатить с помощью BrainTree</Link>
             <Link to='/stripes'>Оплатить с помощью Stripes</Link>
+            <Link to='/another_stripe'>Еще форма оплаты Stripe</Link>
         </div>
     )
 }

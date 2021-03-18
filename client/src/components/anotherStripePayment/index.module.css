@@ -1,0 +1,76 @@
+.form{
+   
+    display: flex;
+    flex-wrap: wrap;
+    align-content: baseline;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.form > div {
+    flex:1 1 100%;
+    margin: 10px;
+}
+.form > div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+.form > div:nth-child(1) > input{
+    width: 320px;
+    height:30px;
+    border:none;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    padding: 5px;
+}
+.form > div:nth-child(1) > input:focus{
+    outline: none;
+    width: 350px;
+    height:50px;
+    border-bottom: 2px solid lightcoral;
+}
+.form > div:nth-child(1) > input:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+
+.form > div:nth-child(2) > div > input{
+    width: 100px;
+    height: 30px;
+    border:none;
+    transition: all 0.3s;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    margin: 5px;
+    cursor: pointer;
+}
+.form > div:nth-child(2) > div > input:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+.form > div:nth-child(2) > div > input:focus{
+    outline: none;
+    width: 130px;
+    height: 50px;
+    border-bottom:  2px solid lightcoral;
+}
+.form > div > button{
+    background: #fff;
+    color:#000;
+    border:none;
+    cursor: pointer;
+    width: 320px;
+    height: 30px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    font-weight: 700;
+}
+.form > div > button:hover{
+    background: lightcoral;
+    color:#fff;
+
+}
+.form > div > button:focus{
+    outline: none;
+}

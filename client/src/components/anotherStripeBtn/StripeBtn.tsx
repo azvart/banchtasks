@@ -14,7 +14,7 @@ const StripeBtn:React.FC = ()=>{
             amount:TotalSum,
             token:token
         };
-        axios.post('http://localhost:5001/stripe/stripe_pay',body)
+        axios.post('http://localhost:5002/stripe/stripe_pay',body)
         .then(response=>{
             console.log(response);
 
