@@ -17,6 +17,9 @@ import Cart from './components/cart/cart';
 import StripeBtn from './components/anotherStripeBtn/StripeBtn';
 import ItemAdded from './components/item_added/index';
 import SDKBrain from './components/braintree_sdk/index';
+
+import Example from './components/example/index';
+
 const App:React.FC = ()=>{
   const [state,dispatch] = useReducer(Reducer,State);
   const {Provider} = Context;
@@ -24,7 +27,7 @@ const App:React.FC = ()=>{
   const [clientToken,setClientToken] = useState('');
   const [instance,setInstance]:any = useState('');
   useEffect(()=>{
-    axios.get('http://localhost:5000/all')
+    axios.get('http://localhost:5001/all')
     .then((response)=>{
       setItem(response.data.data);
     });
@@ -95,7 +98,7 @@ const buy = async ()=>{
                       <Route path='/braintree_sdk' component={SDKBrain} />
                       </SumContext.Provider>
                     <Route path='/add_item'  component={ItemAdded} />
-                    
+                    <Route path='/customhook_example' component={Example} />
                 </Main>
               </Layout>
           </Route>

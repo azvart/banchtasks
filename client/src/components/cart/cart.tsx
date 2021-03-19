@@ -28,6 +28,7 @@ const Cart:React.FC = () =>{
             <Link to='/stripes'>Оплатить с помощью Stripes</Link>
             <Link to='/another_stripe'>Еще форма оплаты Stripe</Link>
             <Link to='/braintree_sdk'>Форма оплаты BrainTree(не DropIn)</Link>
+            <Link to='/customhook_example'>Кастомный хуки</Link>
         </div>
     )
 }
